@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@keyframes clientFade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+html, body {
+    margin: 0 auto;
+    padding: 0 auto;
+    background: #202225;
+}
+
+/* page_animation */
+body {
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation: clientFade ease 1.5s;
+}
+
+.one {
+    position: fixed;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.two {
+    text-align: center;
+    margin-bottom: 35px;
+    align-items: center;
+    justify-content: center;
+}
+
+.two-img {
+    width: 260px;
+    height: 260px;
+    transition: 0.6s;
+    border-radius: 10px;
+    transform: scale(1.0);
+    image-rendering: optimizeQuality;
+}
+
+.two-img:hover {
+    width: 260px;
+    height: 260px;
+    transition: 0.6s;
+    border-radius: 10px;
+    transform: scale(1.07);
+    image-rendering: optimizeQuality;
+}
+
+.three {
+    transition: 0.6s;
+    transform: scale(1.0);
+}
+
+.three:hover {
+    transition: 0.6s;
+    transform: scale(1.07);
+}
+
+.three-link {
+    margin: 0 auto;
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 12px;
+    background: white;
+    text-decoration: none;
+    padding: 8px 20px 8px 20px;
+    font-family: 'Archivo Black', sans-serif;
+}
